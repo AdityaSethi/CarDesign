@@ -1,0 +1,24 @@
+<div ng-controller='DesignPhaseDetailsCtrl'>
+<form name="myForm" class='simple_form form-horizontal' ng-submit="uploadData()">
+	  <div class='col-md-12 margin-top'>
+     	<div class='col-md-3 head'>Select Features</div>
+      </div>
+      <div class='col-md-12 margin-top'>
+     	<div class='col-md-6'> Remote keyless entry</div>
+     	<div class='col-md-6'>{{car.remoteKey}}</div>
+      </div>
+      <div class='col-md-12 margin-top'>
+     	<div class='col-md-6'> OnStar System</div>
+     	<div class='col-md-6'>{{car.onStar}}</div>
+      </div>
+      <div class='col-md-12 margin-top'>
+     	<div class='col-md-6'> Anti-lock brakes (ABS)</div>
+     	<div class='col-md-6'>{{car.abs}}</div>
+      </div>
+      <div class='col-md-12 margin-top'>
+     	<div class='col-md-6'> Electronic stability/skid-control system</div>
+     	<div class='col-md-6'>{{car.electronicStablity}}</div>
+      </div>
+</form>
+<div ng-click='clear()'>clear</div>
+</div>

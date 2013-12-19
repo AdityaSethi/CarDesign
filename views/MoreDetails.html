@@ -1,0 +1,17 @@
+<div class="save-design" ng-controller="MoreDetailsPhaseInitiativeCtrl">
+	<form name="moreDetailsForm" class='simple_form form-horizontal' ng-submit="nextPhase(car.projectManager, car.costing)">
+		<div class='col-md-12 margin-top'>
+     	<div class='col-md-3 head'>Project Manager</div>
+     	<div class='col-md-9'><input class='col-md-6' name="input" ng-model="car.projectManager" required></div>
+	  </div>
+	  <div class='col-md-12 margin-top'>
+     	<div class='col-md-3 head'>Costing</div>
+     	<div class='col-md-9'><input class='col-md-6' name="input" type='number' ng-model="car.costing" required></div>
+	  </div>
+	  <div class='col-md-12 margin-top'>
+	  	<div class='col-md-3'></div>
+     	<div class='col-md-9'><input ng-show="phaseButtonVisiblity" class="btn btn-primary" type="submit" value='Next Phase'/></div>
+	  </div> 
+	</form>
+	<span class="error margin-top" ng-show='overViewComplete'> Please enter the values in Overview Page and submit </span>
+</div>

@@ -1,0 +1,13 @@
+<div class="save-design" ng-controller="MoreDetailsPhaseInitiativeCtrl">
+	<form name="moreDetailsForm" class='simple_form form-horizontal' ng-submit="nextPhase(car.projectManager, car.costing)">
+		<div class='col-md-12 margin-top'>
+     	<div class='col-md-3 head'>Project Manager</div>
+     	<div class='col-md-9'>{{car.projectManager}}</div>
+	  </div>
+	  <div class='col-md-12 margin-top'>
+     	<div class='col-md-3 head'>Costing</div>
+     	<div class='col-md-9'>{{car.costing}}</div>
+	  </div>
+	</form>
+	<span class="error" ng-show='overViewComplete'> Please enter the values in Overview Page and submit </span>
+</div>

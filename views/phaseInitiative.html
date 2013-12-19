@@ -1,0 +1,34 @@
+<div class='mainContainer' ng-controller="PhaseInitiativeCtrl">
+	<div class='sub-header col-md-12'>
+		<h4 class='width-header'>{{car.phase}} Phase</h4>
+		<div class='edit-view'>
+			<div class="float"><h4><a class='back' href="#/LoadingPage">Back</a></h4></div> 
+			<div class="float border-right"><h4><div ng-class="{selectTab: selectViewState == 'edit'}" ng-click="editClick()" class='view-state'>Edit</div></h4></div>
+			<div class="float border-right"><h4><div ng-class="{selectTab: selectViewState == 'view'}" ng-click="viewClick()" class='view-state'>View</div></h4></div>
+		</div>
+	</div>
+	<div ng-switch on="selectViewState">
+		<div class="content" ng-switch-when="edit">
+			<div class='col-md-3' >
+				<ul class='nav sidenav'>
+					<li ng-class="{selected: selectView == 'views/overviewPhaseInitiative.html'}"><a ng-click="viewSelectionInitiative('views/overviewPhaseInitiative.html')">Overview</a></li>
+					<li ng-class="{selected: selectView == 'views/MoreDetails.html'}"><a ng-click="viewSelectionInitiative('views/MoreDetails.html')">More Details</a></li>
+				</ul>
+			</div>
+			<div class='col-md-9'>
+				<div class='data-container' ng-include="selectView"></div>
+			</div>
+		</div>
+		<div class="content" ng-switch-when="view">
+			<div class='col-md-3' >
+				<ul class='nav sidenav'>
+					<li ng-class="{selected: selectView == 'views/overviewView.html'}"><a ng-click="viewSelectionInitiative('views/overviewView.html')">Overview</a></li>
+					<li ng-class="{selected: selectView == 'views/MoreDetailsView.html'}"><a ng-click="viewSelectionInitiative('views/MoreDetailsView.html')">More Details</a></li>
+				</ul>
+			</div>
+			<div class='col-md-9'>
+				<div class='data-container' ng-include="selectView"></div>
+			</div>
+		</div>
+	</div>	
+</div>

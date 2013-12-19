@@ -1,0 +1,31 @@
+<div ng-controller="MoreDetailsDesignPhaseCtrl">
+	<form name="moreDetailsForm" class='simple_form form-horizontal' ng-submit="launchPhase(car.textContent, car.fuelType, car.mileage)">
+		<div class='col-md-12 margin-top'>
+     		<div class='col-md-3 head'>Description</div>
+	     	<div class='col-md-9'>
+	     		<textarea class='col-mod-6' rows="6" cols="60" ng-model="car.textContent" required></textarea>
+	     	</div>
+		</div>
+	    <div class='col-md-12 margin-top'>
+        	<div class='col-md-3 head'>Fuel Type</div>
+     	    <div class='col-md-9'>
+	     		<input type="radio" ng-model="car.fuelType" value="Petrol">  Petrol <br/>
+			    <input type="radio" ng-model="car.fuelType" value="Diesel"> Diesel <br/>
+			</div>
+	  </div>
+	  <div class='col-md-12 margin-top'>
+     		<div class='col-md-3 head'>Mileage(km/lt)</div>
+	     	<div class='col-md-9'>
+	     		<span>1</span>
+	     		<input class='sliderInput' ng-model='car.mileage' type="range" min="1" max="35" step="1" />
+	     		<span>35</span>
+	     		<input class="sliderValueHolder" ng-disabled= true ng-model='car.mileage' type="text" required/>
+	     	</div>
+		</div>
+	  <div class='col-md-12 margin-top'>
+	  	<div class='col-md-3'></div>
+     	<div class='col-md-9'><input ng-show="launchPhaseButton" class="btn btn-primary" type="submit" value='Next Phase'/></div>
+	  </div>
+	</form>
+	<span class="error" ng-show='fuelEntryComplete'> Please select fule type and try to go to next phase </span>
+</div>

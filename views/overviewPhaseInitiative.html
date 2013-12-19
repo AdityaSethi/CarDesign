@@ -1,0 +1,26 @@
+<div ng-controller="OverviewPhaseInitiativeCtrl">
+<form name="myForm" class='simple_form form-horizontal' ng-submit="updateData(car.name, car.segment)">
+      <div class='col-md-12 margin-top'>
+     	<div class='col-md-3 head'>Car Id</div>
+     	<div class='col-md-9'>{{car.id}}</div>
+	  </div>
+	  <div class='col-md-12 margin-top'>
+     	<div class='col-md-3 head'>Car Name</div>
+     	<div class='col-md-9'><input class='col-md-6' name="name" ng-model="car.name" required></div>
+	  </div>
+	  <div class='col-md-12 margin-top'>
+     	<div class='col-md-3 head'>Car Segment</div>
+     	<div class='col-md-9'>
+     		<input type="radio" ng-model="car.segment" value="Suv">  SUV <br/>
+		    <input type="radio" ng-model="car.segment" value="Hatchback"> Hatchback <br/>
+		    <input type="radio" ng-model="car.segment" value="Sedan"> Sedan <br/>
+     	</div>
+	  </div>
+	  <br>
+	  <div class='col-md-12 margin-top'>
+	  	<div class='col-md-3'></div>
+     	<div class='col-md-9 margin-top'><input class="btn btn-primary" type="submit" value='Submit'/></div>
+	  </div>  
+</form>
+<div ng-click='clear()'>clear</div>
+</div>

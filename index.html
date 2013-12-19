@@ -1,0 +1,27 @@
+<html ng-app="automobileApp">
+<head>
+	<script src="lib/angular/angular.min.js"></script>
+	<script src="lib/angular/angular-resource.js"></script>
+	<link rel='stylesheet' type='text/css' media='all' href='styles/vendor/bootstrap.min.css' />
+	<link rel='stylesheet' type='text/css' media='all' href='styles/style.css' />
+	<script src="scripts/routes.js"></script>
+	<script src="scripts/main.js"></script>
+	<script src="scripts/localStorageModule.js"></script>
+	<script src="scripts/controllers/LandingPageCtrl.js"></script>
+	<script src="scripts/controllers/OverviewPhaseInitiativeCtrl.js"></script>
+	<script src="scripts/controllers/MoreDetailsPhaseInitiativeCtrl.js"></script>
+	<script src="scripts/controllers/PhaseInitiativeCtrl.js"></script>
+	<script src="scripts/controllers/PhaseDesignCtrl.js"></script>
+	<script src="scripts/controllers/LaunchPhaseCtrl.js"></script>
+	<script src="scripts/controllers/MoreDetailsDesignPhaseCtrl.js"></script>
+	<script src="scripts/controllers/DesignPhaseDetailsCtrl.js"></script>
+</head>
+<body>
+<div class='mainContainer'>
+  <div class='page-header'>
+  	<h1>Design Car <small>beta</small></h1>
+  </div> 		
+  <div ng-view></div>
+</div>	
+</body>
+</html>

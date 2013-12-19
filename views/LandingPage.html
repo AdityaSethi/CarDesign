@@ -1,0 +1,12 @@
+<div class='mainContainer' ng-controller="LandingPageCtrl">
+	<div class="add">
+	  <h4><a ng-click="addCar()" href='#/PhaseInitiative/{{car.id}}'>Add New Car</a></h4>
+	</div>  
+	<div class='main-list'>
+		<ul class="unstyled">
+			<li ng-repeat="car in cars">
+			    <a ng-click="redirectPage(car.id, car.phase)" class="btn btn-primary btn-lg"> Car id : {{car.id}} &nbsp; Car Name : {{car.name}} &nbsp Phase : {{car.phase}} </a>
+			</li>
+		</ul>
+	</div>
+</div>

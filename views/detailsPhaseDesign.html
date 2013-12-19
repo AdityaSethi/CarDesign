@@ -1,0 +1,17 @@
+<div ng-controller='DesignPhaseDetailsCtrl'>
+<form name="myForm" class='simple_form form-horizontal' ng-submit="uploadImage(car.remoteKey, car.onStar, car.abs, car.electronicStablity)">
+	  <div class='col-md-12 margin-top'>
+     	<div class='col-md-3 head'>Select Features</div>
+     	<div class='col-md-9'>
+	  		<input type="checkbox" ng-model="car.remoteKey"> Remote keyless entry <br/>
+            <input type="checkbox" ng-model="car.onStar" ng-true-value="YES" ng-false-value="NO"> OnStar System <br/>
+            <input type="checkbox" ng-model="car.abs" ng-true-value="YES" ng-false-value="NO"> Anti-lock brakes (ABS) <br/>
+            <input type="checkbox" ng-model="car.electronicStablity" ng-true-value="YES" ng-false-value="NO"> Electronic stability/skid-control system <br/>
+	  	</div>
+	  <div class='col-md-12 margin-top'>
+	  	<div class='col-md-3'></div>
+     	<div class='col-md-9'><input class="btn btn-primary" type="submit" value='Submit'/></div>
+	  </div>  
+</form>
+<div ng-click='clear()'>clear</div>
+</div>

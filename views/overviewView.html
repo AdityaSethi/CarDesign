@@ -1,0 +1,17 @@
+<div ng-controller="OverviewPhaseInitiativeCtrl">
+<form name="myForm" class='simple_form form-horizontal' ng-submit="updateData(car.name)">
+      <div class='col-md-12 margin-top'>
+      <div class='col-md-3 head'>Car Id</div>
+      <div class='col-md-9'>{{car.id}}</div>
+    </div>
+    <div class='col-md-12 margin-top'>
+      <div class='col-md-3 head'>Car Name</div>
+      <div class='col-md-9'>{{car.name}}</div>
+    </div>
+    <div class='col-md-12 margin-top'>
+      <div class='col-md-3 head'>Car Segment</div>
+      <div class='col-md-9'>{{car.segment}}</div>
+    </div>  
+</form>
+<div ng-click='clear()'>clear</div>
+</div>

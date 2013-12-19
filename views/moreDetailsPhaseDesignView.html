@@ -1,0 +1,16 @@
+<div ng-controller="MoreDetailsDesignPhaseCtrl">
+	<form name="moreDetailsForm" class='simple_form form-horizontal' ng-submit="launchPhase(car.textContent)">
+		<div class='col-md-12 margin-top'>
+	     	<div class='col-md-3 head'>Description</div>
+	     	<div class='col-md-9'>{{car.textContent}}</div>
+	    </div> 	
+	    <div class='col-md-12 margin-top'>
+     	    <div class='col-md-3 head'>Fuel Type</div>
+     	    <div class='col-md-9'>{{car.fuelType}}</div>
+	    </div>
+	    <div class='col-md-12 margin-top'>
+     	    <div class='col-md-3 head'>Mileage (km/lt)</div>
+     	    <div class='col-md-9'>{{car.mileage}}</div>
+	    </div>
+	</form>
+</div>
